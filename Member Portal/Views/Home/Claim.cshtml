@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Data saved successfully";
+}
+
+<h1 style="color: green"> Claim has been submitted successfully!</h1>
+<br/>
+
+<table class="table">
+    <thead>
+        <tr style="color: #66CCFF">
+            <th>
+                PolicyID
+            </th>
+
+            <th>
+                MemberID
+            </th>
+
+            <th>
+                BenefitID
+            </th>
+
+            <th>
+                HospitalID
+            </th>
+
+            <th>
+                Claim Amount
+            </th>
+
+            <th>
+                Benefit Name
+            </th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <td>
+                @ViewBag.Message1
+            </td>  
+            <td>
+                @ViewBag.Message2
+            </td>   
+            <td>
+                @ViewBag.Message3
+            </td>
+            <td>
+                @ViewBag.Message4
+            </td>
+            <td>
+                @ViewBag.Message5
+            </td>
+            <td>
+                @ViewBag.Message6
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+
+    
+    
+    
+    
+   
+    

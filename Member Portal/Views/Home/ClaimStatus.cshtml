@@ -1,0 +1,52 @@
+﻿@model MemberPortal.Models.MockDatabase
+@{ ViewData["Title"] = "ClaimStatus"; }
+
+
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="ClaimStatus">
+                <br />
+
+                <form asp-action="SubmitStatus" method="post">
+
+                    <h2 class="text-center"><font color="#151B54">Claim Status</font></h2>
+                    <br />
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <font color="#151B54">
+                            <label asp-for="ClaimID" class="control-label"></label>
+                            <input asp-for="ClaimID" class="form-control" />
+                            <span asp-validation-for="MemberID" class="text-danger"></span>
+                        </font>
+                    </div>
+
+                    <div class="form-group">
+                        <font color="#151B54">
+                            <label asp-for="PolicyID" class="control-label"></label>
+                            <input asp-for="PolicyID" class="form-control" />
+                            <span asp-validation-for="PolicyID" class="text-danger"></span>
+                        </font>
+                    </div>
+
+                    <div class="form-group">
+                        <font color="#151B54">
+                            <label asp-for="MemberID" class="control-label"></label>
+                            <input asp-for="MemberID" class="form-control" />
+                            <span asp-validation-for="MemberID" class="text-danger"></span>
+                        </font>
+                    </div>
+
+                    <br />
+                    <div class="form-group">
+                        <input type="submit" value="Submit" class="btn btn-primary btn-block" />
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-9 col-lg-4 col-xl-4" align="right">
+                <img src="https://th.bing.com/th/id/R.3a582c7600cfe08d9466c093bf26b3d6?rik=j21MsdhdrmyBBg&riu=http%3a%2f%2fimages.clipartpanda.com%2fstatus-clipart-acqpMyjcM.jpeg&ehk=GTgORUl6w%2fkYjGR%2bNBmHF36nrsRjBldpxyKAV91M500%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" class="img-fluid" alt="Sample image" width="350" height="50">
+            </div>
+        </div>
+    </div>
+</section>

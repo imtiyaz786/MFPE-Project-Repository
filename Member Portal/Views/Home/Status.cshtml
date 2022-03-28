@@ -1,0 +1,35 @@
+﻿@{ ViewData["Title"] = "SaveClaim"; }
+
+@if (ViewBag.Status != "")
+ {
+    <section class="vh-100">
+        <div class="container-fluid h-custom">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-9 col-lg-4 col-xl-8">
+                    <br />
+                    <img src="http://www.statusseating.com/wp-content/uploads/Status-Logo.png" class="img-fluid" alt="status image">
+                </div>
+
+                <h1 style="text-align:center">Your current status <font color="#FFA500"> @ViewBag.Status</font></h1>
+
+            </div>
+        </div>
+    </section>
+ }
+
+else
+{
+    <section class="vh-100">
+        <div class="container-fluid h-custom">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-9 col-lg-4 col-xl-8">
+                    <br />
+                    <img src="https://www.quickanddirtytips.com/sites/default/files/styles/article_3_columns_two_third/public/images/2912/oops-image.jpg?itok=C30nPLom" class="img-fluid" alt="error image">
+                </div>
+
+                <h1 style="color:red;text-align:center">Input data is not valid</h1>
+
+            </div>
+        </div>
+    </section>
+}

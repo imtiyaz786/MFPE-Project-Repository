@@ -1,0 +1,84 @@
+﻿@model MemberMicroservice.Models.MemberPremium
+
+@{ ViewData["Title"] = "ViewBill"; }
+
+@if (Model != null)
+{
+    <table class="table">
+        <thead>
+            <tr style="color: #66CCFF">
+                <th>
+                    @Html.DisplayName("MemberID")
+                </th>
+
+                <th>
+                    @Html.DisplayName("PolicyID")
+                </th>
+
+                <th>
+                    @Html.DisplayName("PremiumDue")
+                </th>
+
+                <th>
+                    @Html.DisplayName("PaymentDetails")
+                </th>
+
+                <th>
+                    @Html.DisplayName("DueDate")
+                </th>
+
+                <th>
+                    @Html.DisplayName("LastPremiumPaidDate")
+                </th>
+
+                <th></th>
+
+            </tr>
+        </thead>
+
+    <tbody>
+
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.MemberID)
+            </td>
+
+            <td>
+                @Html.DisplayFor(model => model.PolicyID)
+            </td>
+
+            <td>
+                @Html.DisplayFor(model => model.PremiumDue)
+            </td>
+
+            <td>
+                @Html.DisplayFor(model => model.PaymentDetails)
+            </td>
+
+            <td>
+                @Html.DisplayFor(model => model.DueDate)
+            </td>
+
+            <td>
+                @Html.DisplayFor(model => model.LastPremiumPaidDate)
+            </td>
+        </tr>
+
+    </tbody>
+    </table> 
+ }
+
+else
+{
+    <section class="vh-100">
+        <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-4 col-xl-8">
+                <img src="https://thumbs.dreamstime.com/b/sorry-text-human-holding-signboard-written-over-held-icon-54249764.jpg" class="img-fluid"
+                     alt="Sample image" width="380" height="50">
+                <h1 style="color:red;text-align:center">No Policy has been subscribed yet.</h1>
+            </div>
+        </div>
+        </div>
+    </section>
+}
